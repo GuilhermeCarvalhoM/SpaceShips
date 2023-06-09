@@ -1,0 +1,151 @@
+.filters {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 500px;
+}
+
+.filters.collapsed {
+  max-height: 0;
+  padding: 0;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filters .row {
+  margin-bottom: 10px;
+}
+
+.filters .col-2 {
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #343a40;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #343a40;
+  padding: 10px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.content {
+  margin-top: 20px;
+  padding-bottom: 100px;
+  min-height: calc(100vh);
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-striped {
+  margin-top: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #343a40;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.column-filter label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+

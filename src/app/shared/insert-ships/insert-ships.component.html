@@ -1,0 +1,60 @@
+<app-header></app-header>
+    <div class="container-fluid content">
+      <h1>Formulário de Star Wars</h1>
+  <form (submit)="enviarFormulario()">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="formData.name" required><br>
+
+    <label for="model">Modelo:</label>
+    <input type="text" id="model" name="model" [(ngModel)]="formData.model" required><br>
+
+    <label for="manufacturer">Fabricante:</label>
+    <input type="text" id="manufacturer" name="manufacturer" [(ngModel)]="formData.manufacturer" required> <br>
+
+    <label for="cost_in_credits">Custo em Créditos:</label>
+    <input type="text" id="cost_in_credits" name="cost_in_credits" [(ngModel)]="formData.cost_in_credits" required><br>
+
+    <label for="length">Comprimento:</label>
+    <input type="text" id="length" name="length" [(ngModel)]="formData.length" required><br>
+
+    <label for="max_atmosphering_speed">Velocidade Atmosférica Máxima:</label>
+    <input type="text" id="max_atmosphering_speed" name="max_atmosphering_speed" [(ngModel)]="formData.max_atmosphering_speed" required><br>
+
+
+    <label for="crew">Equipe:</label>
+    <input type="text" id="crew" name="crew" [(ngModel)]="formData.crew" required><br>
+
+    <label for="passengers">Passageiros:</label>
+    <input type="text" id="passengers" name="passengers" [(ngModel)]="formData.passengers" required><br>
+
+    <label for="cargo_capacity">Capacidade de Carga:</label>
+    <input type="text" id="cargo_capacity" name="cargo_capacity" [(ngModel)]="formData.cargo_capacity" required><br>
+
+    <label for="consumables">Consumíveis:</label>
+    <input type="text" id="consumables" name="consumables" [(ngModel)]="formData.consumables" required><br>
+
+    <label for="hyperdrive_rating">Classificação de Hyperdrive:</label>
+    <input type="text" id="hyperdrive_rating" name="hyperdrive_rating" [(ngModel)]="formData.hyperdrive_rating" required><br>
+
+    <label for="MGLT">MGLT:</label>
+    <input type="text" id="MGLT" name="MGLT" [(ngModel)]="formData.MGLT" required><br>
+
+    <label for="starship_class">Classe de Nave Estelar:</label>
+    <input type="text" id="starship_class" name="starship_class" [(ngModel)]="formData.starship_class" required><br>
+
+    <label style="display: none;" for="created">Criado em:</label>
+    <input style="display: none;" type="text" id="created" name="created" [(ngModel)]="formData.created" ><br>
+
+    <label style="display: none;"for="edited">Editado em:</label>
+    <input  style="display: none;"type="text" id="edited" name="edited" [(ngModel)]="formData.edited" ><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+    </div>
+
+
+
+
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
