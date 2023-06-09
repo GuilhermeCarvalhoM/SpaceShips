@@ -6,12 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class StarWarsServiceService {
-  private apiUrl = 'http://localhost:3000/spaceships'; // Substitua pela URL correta da sua API
 
   constructor(private http: HttpClient) {}
 
   enviarDadosFormulario(data: any): Observable<any> {
-    return this.http.post(this.apiUrl, data);
+    return this.http.post('http://localhost:3000/spaceships', data);
   }
 
   atualizarDados(data: any, index: number) {
